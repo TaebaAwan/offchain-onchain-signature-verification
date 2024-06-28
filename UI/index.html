@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dApp</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      background-image: url("./bg.avif"); 
+      background-size: cover;
+      background-position: center; 
+    }
+    
+    .content-container {
+      text-align: center; 
+      color: white; 
+    }
+    
+    h1 {
+      font-size: 3em; 
+      font-weight: bold; 
+      margin-bottom: 20px; 
+    }
+    
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px; 
+      color: white; 
+    }
+    
+    .connect-wallet {
+      background-color: blue;
+    }
+    
+    .sign-message {
+      background-color: green;
+    }
+    
+    .verify-signature {
+      background-color: purple;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-container">
+    <h1>Sign Messages Offchain!</h1>
+    <button onclick="connectWallet()" class="connect-wallet">Connect Wallet</button>
+    <button onclick="signMessage()" class="sign-message">Sign Message</button>
+    <button onclick="verifySignature()" class="verify-signature">Verify Signature</button>
+  </div>
+
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="server.js" type="application/javascript"></script>
+</body>
+</html>
