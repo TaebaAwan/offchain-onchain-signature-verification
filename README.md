@@ -1,13 +1,16 @@
-# Sample Hardhat Project
+#  Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
-
-Try running some of the following tasks:
+To run this project locally;
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+npx hardhat init
+npx hardhat compile
+npx hardhat ignition deploy ./ignition/modules/sig.js --network <your-network>
+npx hardhat test test/signature.js
 ```
+#  Minimalistic UI
+
+Prerequisites:
+Install Metamask in browser
+
+https://offchain-signature-verification.netlify.app/
